@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Electronic Literature</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- menu header -->
+<div id="header-placeholder"></div>
+<!-- load header -->
+<script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("header-placeholder").innerHTML = html;
+    });
+</script>
+<script>
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+  var element = document.querySelector("container2");
+  element.classList.toggle("dark-mode");
+ }
+</script>
+<div class="gallery">
+  <div class="feature-box" id="featureBox">
+    <img id="featureImg" src="img/cinema.JPG">
+    <a href="https://gustuph.github.io/digital-writing-haunt/"><h2 id="featureTitle">The Blazing Spirits (2026)</h2></a>
+    <p id="featureDesc">In the classic styling of Angus, this piece explores grief and the ability of a character to forgive the people responsible, and the role that plays in relinquishing their own guilt.</p>
+    <p id="featureMeta"><small>A work of electronic literature that invites the reader to take on the investigation pursued by the protagonist</small></p>
+  </div>
+</body>
+</html>
